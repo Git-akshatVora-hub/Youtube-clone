@@ -1,0 +1,113 @@
+.video-grid 
+{
+    display: grid;
+    column-gap: 17px;
+    row-gap: 25px;
+}
+
+@media (max-width : 750px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width : 751px) and (max-width : 999px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width : 1000px)
+{
+    .video-grid
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.video-info-grid
+{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-preview
+{
+    width: 100%;
+    /*display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;  Because we used grid */
+}
+
+.thumbnail-row
+{
+    margin-bottom: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.video-time
+{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+    font-size:12px ;
+    font-family: roboto,arial;
+    padding: 4px 4px 4px 4px;
+    font-weight: 500;
+
+    position: absolute;
+    bottom: 8px;
+    right: 6px;
+}
+
+.thumbnail
+{
+    width: 100%;
+    /*width: 300px;*/
+    /*display: block;*/
+}
+
+.channel-picture 
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+}
+
+.profile-picture
+{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.video-info
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.video-title
+{
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.video-author,.video-stats
+{
+    font-size: 12px;
+    color: #606060;
+}
+
+.video-author
+{
+    margin-bottom: 4px;
+}
